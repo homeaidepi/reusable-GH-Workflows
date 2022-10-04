@@ -52,7 +52,7 @@ endstep0-->
   TBD-step-1-notes.
 -->
 
-<details id=1>
+<details id=2>
 <summary><h2>Step 1: Make a workflow reusable</h2></summary>
 
 _Welcome to "Reusable Workflows and Matrix Strategies"! :wave:_
