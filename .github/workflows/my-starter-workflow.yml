@@ -16,11 +16,12 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy to your project.
   call-reusable-workflow:
-      runs-on: ubuntu-latest
-
-      steps:
-        - name: Call reusable workflow
-          uses: ./.github/workflows/reusable-workflow.yml
-          with:
-            node: 14
+    strategy:
+      matrix:
+        nodeversion: [14, 16, 18, 20]
+    uses: ./.github/workflows/reusable-workflow.yml
+    with:
+      node: ${{ matrix.nodeversion }}   
+         
+  
           
